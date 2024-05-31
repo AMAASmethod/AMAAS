@@ -3,11 +3,11 @@ AMAAS (Automated Mobile Accessibility Assessment System) is an innovative approa
 
 ## Steps:
 
-1.Utilize the automated testing tool, Fastbot, to procure logs containing actions for each step and corresponding XML files of the respective pages.
-2.step and corresponding XML files of the respective pages.
-3.Update folder addresses and their corresponding file addresses as necessary.
-4.Execute **data_processing.py**.
-5.Metrics and scores for each app will be stored in **evaluation.xlsx**.
+1.  Utilize the automated testing tool, Fastbot, to procure logs containing actions for each step and corresponding XML files of the respective pages.
+2.  step and corresponding XML files of the respective pages.
+3.  Update folder addresses and their corresponding file addresses as necessary.
+4.  Execute **data_processing.py**.
+5.  Metrics and scores for each app will be stored in **evaluation.xlsx**.
 
 ## Contact Us:
 For any further questions or specific requirements, please don't hesitate to reach out to us.
