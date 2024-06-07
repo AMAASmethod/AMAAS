@@ -1,5 +1,3 @@
-# 检查输入的xml，遍历所有节点的上下边界，找到bounds属性的下边界是页面的下边界，上边界位于页面后7/8的nodes
-# 作为页面导航栏即地标的位置。
 import os.path
 import re
 from xml.etree import ElementTree as ET
