@@ -33,7 +33,7 @@ def main():
     replace_xml_file = os.path.join(folder_path, 'replace_xml.txt')
     node_file = os.path.join(folder_path, 'nodes.txt')
     edge_file = os.path.join(folder_path, 'edges.txt')
-    graph_file = os.path.join(folder_path, 'graph1.html')
+    graph_file = os.path.join(folder_path, 'graph.html')
 
     out_repair_new_file = os.path.join(folder_path, 'action_repair_new.txt')
     out_keywords_file = os.path.join(folder_path, 'any-node.txt')
