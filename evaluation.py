@@ -38,6 +38,8 @@ def eva(data):
     w = (1 - E) / sum(1 - E)
     print(f'w:{w}\n')
 
+    # w = np.array([0.18044275, 0.41092976, 0.19386759, 0.21475991])  # Test set weights
+
     s = np.dot(data3, w)
     Score = 4 * s / max(s)
     for i in range(0, len(Score)):
