@@ -19,7 +19,7 @@ def analyze_xml(xml_path):
 
         def find_matching_nodes(page_bounds):
             page_left, page_top, page_right, page_bottom = parse_bounds(page_bounds)
-            page_bottom = 1794
+            page_bottom = 1794 # Non-full-screen needs to remove the system bar standing at the bottom
             upper_boundary_threshold = page_top + (7 * (page_bottom - page_top) // 8)
             matching_nodes = []
             processed_nodes = set()
