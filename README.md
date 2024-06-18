@@ -6,7 +6,7 @@ AMAAS (Automated Mobile Accessibility Assessment System) is an innovative approa
 1.  Utilize the automated testing tool, Fastbot, to procure logs containing actions for each step and corresponding XML files of the respective pages.
 2.  Update folder addresses and their corresponding file addresses as necessary.
 3.  Create a new **eval.xlsx** file in the location where you want to get the score table.
-4.  Metrics and scores for each app will be stored in **evaluation.xlsx**.
+4.  Metrics and scores for each app will be stored in **eval.xlsx**.
 5.  A single application cannot directly obtain a score. You need to have 4-5 application results in the eval.xlsx table in advance.
 6.  Run the following command in the command line of the project folder:
 
