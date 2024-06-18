@@ -14,11 +14,9 @@ AMAAS (Automated Mobile Accessibility Assessment System) is an innovative approa
 python data_processing.py -f <folder_path> -e <eval_folder>
 Options:
 
--f, --folder
-  Path to the folder containing Fastbot logs.
--e, --eval_folder
-  Path to the folder where evaluation results will be saved.
-
+-f  --folder    Path to the folder containing Fastbot logs.
+-e  --eval_folder    Path to the folder where evaluation results will be saved.
+```
 
 ## Contact Us:
 For any further questions or specific requirements, please don't hesitate to reach out to us.
