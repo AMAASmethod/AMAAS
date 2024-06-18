@@ -8,9 +8,10 @@ AMAAS (Automated Mobile Accessibility Assessment System) is an innovative approa
 3.  Create a new **eval.xlsx** file in the location where you want to get the score table.
 4.  Metrics and scores for each app will be stored in **evaluation.xlsx**.
 5.  A single application cannot directly obtain a score. You need to have 4-5 application results in the eval.xlsx table in advance.
-6.  Run python data_processing.py -f -e in the command line of the project folder.
-        '-f', '--folder', help='Path to the folder containing Fastbot logs.'
-        '-e', '--eval_folder', help='Path to the folder where evaluation results will be saved.'
+6.  Run the following command in the command line of the project folder:
+
+```bash
+python data_processing.py -f <folder_path> -e <eval_folder>
 
 ## Contact Us:
 For any further questions or specific requirements, please don't hesitate to reach out to us.
