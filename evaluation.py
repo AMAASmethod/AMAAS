@@ -43,7 +43,7 @@ def eva(data):
     s = np.dot(data3, w)
     Score = 4.5 * s / max(s)  # No app has a perfect 5 points in terms of accessibility in the eyes of users
     for i in range(0, len(Score)):
-        print(f"No.{i} score is: {Score[i]}")
+        print(f"No.{i+1} score is: {Score[i]}")
 
 
 
