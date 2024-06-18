@@ -5,9 +5,12 @@ AMAAS (Automated Mobile Accessibility Assessment System) is an innovative approa
 
 1.  Utilize the automated testing tool, Fastbot, to procure logs containing actions for each step and corresponding XML files of the respective pages.
 2.  Update folder addresses and their corresponding file addresses as necessary.
-3.  Execute **data_processing.py**.
+3.  Create a new **eval.xlsx** file in the location where you want to get the score table.
 4.  Metrics and scores for each app will be stored in **evaluation.xlsx**.
-5.  Note that: The entropy weighting method requires a certain base number of apps to get the final score, and a single app cannot directly calculate the score, so 4-5 apps need to be tested.
+5.  A single application cannot directly obtain a score. You need to have 4-5 application results in the eval.xlsx table in advance.
+6.  Run python data_processing.py -f -e in the command line of the project folder.
+        '-f', '--folder', help='Path to the folder containing Fastbot logs.'
+        '-e', '--eval_folder', help='Path to the folder where evaluation results will be saved.'
 
 ## Contact Us:
 For any further questions or specific requirements, please don't hesitate to reach out to us.
