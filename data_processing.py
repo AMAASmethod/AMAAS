@@ -21,8 +21,7 @@ from evaluation_scattered_focus import inversions_in_xml_bounds
 from evaluation import eva
 
 
-def main():
-    folder_path = r"E:\Fastbot_Android-main\fastbot-reddit1"
+def main(folder_path, eval_folder):
     input_file = os.path.join(folder_path, 'Logcat.txt')
     out_action_file = os.path.join(folder_path, 'action.txt')
     out_code_file = os.path.join(folder_path, 'file_hashes.txt')
@@ -88,7 +87,7 @@ def main():
     d = d if d != 0 else 1e-8
 
     part_after_fastbot = folder_path.split("fastbot-")[-1]
-    excel_path = r'E:\Fastbot_Android-main\eval1.xlsx'
+    excel_path = os.path.join(eval_folder, 'eval.xlsx')
     data = pd.read_excel(excel_path, usecols='A:E')
 
     new_row = {'App': part_after_fastbot, 'A1(No label)': a, 'A2(Image with no description)': b, 'A3(False label)': c, 'A4(Focus disorder)': d}
@@ -99,4 +98,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+        parser = argparse.ArgumentParser(description='Process and evaluate Fastbot data.')
+    parser.add_argument('-f', '--folder', required=True, help='Path to the folder containing Fastbot logs.')
+    parser.add_argument('-e', '--eval_folder', required=True, help='Path to the folder where evaluation results will be saved.')
+
+    args = parser.parse_args()
+    main(args.folder, args.eval_folder)
