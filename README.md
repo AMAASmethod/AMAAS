@@ -17,7 +17,7 @@ Options:
 -f  --folder    Path to the folder containing Fastbot logs.
 -e  --eval_folder    Path to the folder where evaluation results will be saved.
 
-eg:python data_processing.py -f "E:\Fastbot_Android-main\fastbot-reddit1" -e "E:\Fastbot_Android-main
+eg:python data_processing.py -f "E:\Fastbot_Android-main\fastbot-reddit" -e "E:\Fastbot_Android-main
 ```
 
 ## Contact Us:
